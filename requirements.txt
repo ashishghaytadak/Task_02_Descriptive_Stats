@@ -1,0 +1,8 @@
+# Dependencies for the Pandas and Polars scripts.
+# pure_python_stats.py needs NONE of these — it uses only the standard library.
+
+pandas>=2.0
+polars>=0.20
+
+# Optional — only needed for the bonus visualization / benchmarking work:
+# matplotlib>=3.7
