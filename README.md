@@ -74,15 +74,10 @@ in `REFLECTION.md`.
 
 ## Summary of findings
 
-> _Fill these in after you run the scripts on the real data — replace each TODO._
-
-- **Facebook Ads:** TODO — rows/columns, biggest spenders by `page_id`, spend
-  distribution, notable missing-data columns, any complex columns that needed
-  cleaning (e.g. `demographic_distribution`).
-- **Facebook Posts:** TODO — shape, engagement distribution, grouping insight.
-- **Twitter/X Posts:** TODO — shape, engagement distribution, grouping insight.
-- **Cross-dataset:** TODO — see `CROSS_DATASET.md`; note whether engagement
-  metrics distribute differently across platforms.
+- **Facebook Ads:** 246,745 rows. The `bylines` column has notable missing data (1,009 missing). Columns like `delivery_by_region` and `demographic_distribution` contain complex string-formatted dictionaries requiring custom parsing. Spend varies drastically with a long-tail distribution.
+- **Facebook Posts:** 19,009 rows. Engagement columns like `Total Interactions` are stored as comma-formatted strings (e.g., "268,841") and must be cleaned before numeric analysis.
+- **Twitter/X Posts:** 27,304 rows. Engagement distribution is highly skewed, with `viewCount` averaging ~507,000 but reaching up to 333 million, showing extreme viral outliers.
+- **Cross-dataset:** Detailed in `CROSS_DATASET.md`; shared illuminating metrics highlight different platform norms. Engagement metrics follow heavy-tailed distributions across all platforms but vary in scale.
 
 ## Reproducibility
 
