@@ -1,12 +1,11 @@
 # Reflection: Pure Python vs Pandas vs Polars
 
-This document answers the research questions from both milestones, drawing on
-my experience building and running all three scripts across the Facebook Ads,
-Facebook Posts, and Twitter/X Posts datasets.
+This document answers the research questions from Milestone A, drawing on
+my experience building and running all three scripts on the Facebook Ads dataset.
 
 ---
 
-## Milestone A questions
+## Questions
 
 ### Was it hard to get identical numbers across all three approaches? What caused discrepancies?
 
