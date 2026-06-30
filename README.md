@@ -1,6 +1,7 @@
 # Descriptive Statistics: Pure Python vs Pandas vs Polars
 
-Three independent implementations of the same descriptive-statistics analysis.
+Three independent implementations of the same descriptive-statistics analysis,
+including grouped statistics by `page_id` and by `page_id` + `ad_id`.
 Built for the 2024 U.S. election Facebook Ads dataset, but the scripts are
 **dataset-agnostic**: each accepts a CSV path on the command line and adapts to the
 schema it finds.
@@ -14,7 +15,6 @@ schema it finds.
 | `pure_python_stats.py` | Descriptive + grouped stats using **only the standard library** (`csv`, `statistics`, `collections`, …). No third-party deps. |
 | `pandas_stats.py` | Same analysis using **Pandas** (`describe`, `value_counts`, `nunique`, `groupby`). |
 | `polars_stats.py` | Same analysis using **Polars** (expression API, `group_by`, `value_counts`, `n_unique`). |
-
 | `requirements.txt` | Dependencies for the Pandas/Polars scripts. |
 | `REFLECTION.md` | Comparative analysis and answers to the research questions. |
 
